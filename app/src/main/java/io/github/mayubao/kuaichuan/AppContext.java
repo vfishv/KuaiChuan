@@ -2,8 +2,6 @@ package io.github.mayubao.kuaichuan;
 
 import android.app.Application;
 
-import com.tencent.bugly.Bugly;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Executor;
@@ -51,7 +49,7 @@ public class AppContext extends Application {
         this.mAppContext = this;
 
         //初始化Bugly
-        Bugly.init(getApplicationContext(), BUGLY_APP_ID, true);
+        //com.tencent.bugly.Bugly.init(getApplicationContext(), BUGLY_APP_ID, true);
     }
 
     /**
